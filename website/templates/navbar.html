@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+ nav{
+    background-color: rgb(11, 147, 36);
+    height:80px;
+    width: 100%;
+    margin-bottom: 10px;
+    /* position: fixed; */
+
+}
+label.home{
+    color:white;
+    font-size: 30px;
+    line-height: 80px;
+    padding:0 100px;
+}
+nav ul{
+
+    float: right;
+    margin-right: 10px;
+
+}
+nav ul li{
+    display: inline-block;
+    line-height: 41px;
+    margin: 0 5px;
+
+
+}
+nav ul li a{
+    color:rgb(19, 166, 93);;
+    font-size: 15px;
+    text-transform: uppercase;
+    border: 3px solid black;
+    border-radius:5px 6px ;
+    background-color: rgb(10, 3, 3);
+}
+a:hover{
+    color:white;
+}
+marquee{
+    font-size: 15px;
+    color:forestgreen;
+    margin-bottom: 180px;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Segoe UI';
+
+    font-weight: bolder;
+}
+</style>
+<body>
+    <nav>
+        <label class="home">Rachu Outfits</label>
+        <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/about-us">About Us</a></li>
+    <li><a href="/contact-us">Contact</a></li>
+            </ul>
+    </nav>
+
+
+
+{% block content %}
+{% endblock %}
+</body>
+</html>
