@@ -1,14 +1,90 @@
 <!DOCTYPE html>
 {% extends 'navbar.html' %}
 {% block content %}
+{% load static %}
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/women.css' %}">
+    <style>
+        .container1{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-between;
+        align-content:space-between;
+        border:2px solid green;
+}
+
+        .part1 img{
+        width:400px;
+        height:400px;
+        padding:20px;
+       margin:10px;}
+    </style>
 </head>
 <body>
+<div class="men1">
+    <img src="{% static 'images/femalebanner2.webp' %}" alt="img1" width="99%">
+</div>
+<div class="container1">
+    <div class="box"><img src="{% static 'images/women1.webp' %}" alt="men1" width="400px">
+        <p>allen solly</p>
+        <p>Men's shrit</p>
+        <p>rs.499</p>
+        <span><button>Add to Cart</button><button>Buy now</button></span>
+    </div>
+    <div class="box"><img src="{% static 'images/women2.webp' %}" alt="men1" width="400px">
+        <p>allen solly</p>
+        <p>Men's shrit</p>
+        <p>rs.499</p>
+        <span><button>Add to Cart</button><button>Buy now</button></span>
+    </div>
+    <div  class="box"><img src="{% static 'images/women3.webp' %}" alt="men1" width="400px">
+        <p>allen solly</p>
+        <p>Men's shrit</p>
+        <p>rs.499</p>
+        <span><button>Add to Cart</button><button>Buy now</button></span>
+    </div>
+    <div  class="box"><img src="{% static 'images/women4.webp' %}" alt="men1" width="400px">
+        <p>allen solly</p>
+        <p>Men's shrit</p>
+        <p>rs.499</p>
+        <span><button>Add to Cart</button><button>Buy now</button></span>
+    </div>
+    <div  class="box"><img src="{% static 'images/women5.webp' %}" alt="men1" width="400px">
+        <p>allen solly</p>
+        <p>Men's shrit</p>
+        <p>rs.499</p>
+         <span><button>Add to Cart</button><button>Buy now</button></span>
+    </div>
+    <div  class="box"><img src="{% static 'images/women6.webp' %}" alt="men1" width="400px">
+        <p>allen solly</p>
+        <p>Men's shrit</p>
+        <p>rs.499</p>
+        <span><button>Add to Cart</button><button>Buy now</button></span>
+    </div>
+    <div  class="box"><img src="{% static 'images/women7.webp' %}" alt="men1" width="400px">
+        <p>allen solly</p>
+        <p>Men's shrit</p>
+        <p>rs.499</p>
+        <span><button>Add to Cart</button><button>Buy now</button></span>
+    </div>
+    <div  class="box"><img src="{% static 'images/women8.webp' %}" alt="men1" width="400px">
+        <p>allen solly</p>
+        <p>Men's shrit</p>
+        <p>rs.499</p>
+        <span><button>Add to Cart</button><button>Buy now</button></span>
+    </div>
+    <div  class="box"><img src="{% static 'images/women9.webp' %}" alt="men1" width="400px">
+        <p>allen solly</p>
+        <p>Men's shrit</p>
+        <p>rs.499</p>
+        <span><button>Add to Cart</button><button>Buy now</button></span>
+    </div>
 
+</div>
 </body>
 {% endblock %}
 </html>

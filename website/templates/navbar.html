@@ -6,11 +6,12 @@
 </head>
 <style>
  nav{
-    background-color: rgb(11, 147, 36);
+    background-color: rgb(250, 123, 0);
     height:80px;
     width: 100%;
     margin-bottom: 10px;
-    /* position: fixed; */
+    position: sticky;
+    top:2px;
 
 }
 label.home{
@@ -20,32 +21,34 @@ label.home{
     padding:0 100px;
 }
 nav ul{
-
+    display:flex;
     float: right;
     margin-right: 10px;
 
 }
 nav ul li{
     display: inline-block;
-    line-height: 41px;
-    margin: 0 5px;
+    line-height: 80px;
+    margin: 0 5px;}
 
-
-}
 nav ul li a{
-    color:rgb(19, 166, 93);;
-    font-size: 15px;
-    text-transform: uppercase;
-    border: 3px solid black;
-    border-radius:5px 6px ;
-    background-color: rgb(10, 3, 3);
-}
-a:hover{
+    text-decoration:none;
     color:white;
+    font-size: 20px;
+    text-transform: uppercase;
+    position:relative;
+    right:30px;
 }
+nav a:hover{
+    color:black;
+    border-bottom: 3px solid white;
+    border-top:3px solid white;
+    border-radius:2px ;
+    margin-top:5px;
+    }
 marquee{
     font-size: 15px;
-    color:forestgreen;
+    color:brown;
     margin-bottom: 180px;
 }
 
@@ -61,14 +64,13 @@ h1{
         <label class="home">Rachu Outfits</label>
         <ul>
     <li><a href="/">Home</a></li>
-    <li><a href="/about-us">About Us</a></li>
-    <li><a href="/contact-us">Contact</a></li>
+    <li><a href="/about-us">Men</a></li>
+    <li><a href="/contact-us">Women</a></li>
+    <li><a href="/login-page">Login</a></li>
             </ul>
     </nav>
 
-
-
-{% block content %}
+    {% block content %}
 {% endblock %}
 </body>
 </html>

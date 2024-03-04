@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+{% extends 'navbar.html' %}
+{% block content %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/log.css' %}">
+</head>
+<body style="background-image:url('{% static 'images/bg1.webp' %}'); opacity:10;"}>
+
+<div class="form">
+    <h1>LOGIN</h1>
+    <form method="POST" action="">
+        {% csrf_token %}
+        <pre>
+
+            Name    <input type="text" name="name"><br>
+            Email   <input type="text" name="email"><br>
+            Contact <input type="text" name="contact"><br>
+           <button>Submit</button>
+        </pre>
+    </form>
+</div>
+</body>
+{% endblock%}
+</html>
